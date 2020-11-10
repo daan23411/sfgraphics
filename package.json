@@ -1,0 +1,30 @@
+{
+  "name": "sfgraphics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "ascii-table": "^0.0.9",
+    "canvas": "^2.6.1",
+    "common-tags": "^1.8.0",
+    "discord-giveaways": "^4.2.1",
+    "discord.js": "^12.2.0",
+    "mathjs": "^7.0.2",
+    "mongoose": "^5.9.18",
+    "ms": "^2.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daan23411/sfgraphics.git"
+  },
+  "author": "daan2341",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daan23411/sfgraphics/issues"
+  },
+  "homepage": "https://github.com/daan23411/sfgraphics#readme"
+}
