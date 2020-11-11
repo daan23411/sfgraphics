@@ -1,6 +1,6 @@
 const { Collection, Client, Discord, MessageEmbed } = require('discord.js');
 const fs = require('fs');
-const canvas = require("canvas");
+const Canvas = require("canvas");
 const client = new Client({
     disableEveryone: true
 })
