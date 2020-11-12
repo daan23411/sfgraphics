@@ -26,7 +26,7 @@ client.prefix = config.prefix;
 client.on('guildMemberAdd', async member => {
     const channel = member.guild.channels.cache.find(ch => ch.id === '714078545567285258');
     if (!channel) return;
-    const canvas = Canvas.createCanvas(700, 250);
+    const canvas = Canvas.createCanvas(1023, 498);
     const ctx = canvas.getContext('2d');
     const background = await Canvas.loadImage('./anime-background.png')
     ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
@@ -49,9 +49,8 @@ client.on('guildMemberAdd', async member => {
     ctx.drawImage(avatar, 25, 25, 200, 200);
     const attachment = new MessageAttachment(canvas.toBuffer(), 'anime-background.png');
     channel.send(attachment);
-    member.roles.add("721661035408392222");
 });
-mongoose.connect("mongodb+srv://AmsterdamZuid:AdamZuidOfficialDB@cluster0-hgkzz.mongodb.net/Data?retryWrites=true&w=majority", {
+mongoose.connect("", {
     useUnifiedTopology: true,
     useNewUrlParser: true,
 });

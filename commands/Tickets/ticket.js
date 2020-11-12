@@ -4,7 +4,7 @@ module.exports = {
     category: 'Tickets',
     aliases: ['new'],
     description: 'maak een ticket aan',
-    run: async (bot, message, args) => {
+    run: async (bot, message, member, args) => {
         const catID = "764770033128833045";
         const staffRole = message.guild.roles.cache.find(x => x.name === '🎟| Support');
         const person = message.author.id
@@ -72,8 +72,8 @@ module.exports = {
                         });
 
                         let embedTicket = new MessageEmbed()
-                            .setTitle(`Hallo ${message.author.username}`)
-                            .setDescription("Stuur hier alvast je vraag/klacht! Support komt zo bij je.")
+                            .setTitle(`Hallo ${member}`)
+                            .setDescription("Bedankt voor het maken van een ticket. \n Stel alvast u vraag en het support team komt u zo snel mogelijk helpen!")
                             .setColor('#417af6')
                             .setFooter('© daan2341, 2020 - 2021')
                             .setTimestamp();
