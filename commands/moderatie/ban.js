@@ -1,7 +1,7 @@
 const { MessageEmbed } = require("discord.js");
 module.exports = {
-  name: "kick",
-  description: "kick de gegeven ID van de server.",
+  name: "ban",
+  description: "ban de gegeven ID van de server.",
   category: "moderatie",
   usage: "<user id> <reason>",
   run: async (bot, message, args) => {
