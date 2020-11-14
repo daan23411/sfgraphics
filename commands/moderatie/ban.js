@@ -5,7 +5,7 @@ module.exports = {
   category: "moderatie",
   usage: "<user id> <reason>",
   run: async (bot, message, args) => {
-    if (!member.roles.has("� | Medewerker"))
+    if (!message.guild.roles.cache.has("� | Medewerker"))
       return message.channel.send(
         `Je hebt geen permissie om dit te doen!`
       );
@@ -29,9 +29,9 @@ module.exports = {
         `Geef een reden op`
       );
 
-    User.kick(Reason);
+    User.ban(Reason);
     const Embed = new MessageEmbed()
-      .setTitle(`You have kicked a member!`)
+      .setTitle(`You have banned a member!`)
       .setDescription(
         `Je hebt ${bot.users.cache.get(User.id).username} gebanned van deze server!`
       )
