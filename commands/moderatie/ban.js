@@ -5,6 +5,11 @@ module.exports = {
   category: "moderatie",
   usage: "<user id> <reason>",
   run: async (bot, message, args) => {
+    if (!message.member.roles.has("� | Medewerker"))
+      return message.channel.send(
+        `Je hebt geen permissie om dit te doen!`
+      );
+
     if (!args[0])
       return message.channel.send(
         `Geef een gebruiker op die je wilt kicken.`
@@ -23,10 +28,7 @@ module.exports = {
       return message.channel.send(
         `Geef een reden op`
       );
-    if (!message.member.permissions.has("KICK_MEMBERS"))
-      return message.channel.send(
-        `Je hebt geen permissie om dit te doen!`
-      );
+
     User.kick(Reason);
     const Embed = new MessageEmbed()
       .setTitle(`You have kicked a member!`)
