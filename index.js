@@ -50,7 +50,7 @@ client.on('guildMemberAdd', async member => {
     const attachment = new MessageAttachment(canvas.toBuffer(), 'anime-background.png');
     channel.send(attachment);
 });
-mongoose.connect("", {
+mongoose.connect("mongodb+srv://SFGraphics:SFGraphicsDB@cluster0.5rbsg.mongodb.net/<dbname>?retryWrites=true&w=majority", {
     useUnifiedTopology: true,
     useNewUrlParser: true,
 });
