@@ -5,7 +5,7 @@ module.exports = {
   category: "moderatie",
   usage: "<user id> <reason>",
   run: async (bot, message, args) => {
-    if (!message.member.roles.has("� | Medewerker"))
+    if (!member.roles.has("� | Medewerker"))
       return message.channel.send(
         `Je hebt geen permissie om dit te doen!`
       );
