@@ -13,7 +13,7 @@ module.exports = {
       return message.channel.send(
         `Geef een gebruiker op die je wilt kicken.`
       );
-    let User = message.guild.members.cache.get(args[0]);
+    let User = message.mentions.users.first();
     if (!User)
       return message.channel.send(
         `Die gebruiker zit niet in de server of bestaat niet. Geef een geldige naam op`
