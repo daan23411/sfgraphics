@@ -5,9 +5,9 @@ module.exports = {
   category: "moderatie",
   usage: "<user id> <reason>",
   run: async (bot, message, args) => {
-    if (!message.guild.roles.cache.has("� | Medewerker"))
+    if (!message.member.permissions.has("BAN_MEMBERS"))
       return message.channel.send(
-        `Je hebt geen permissie om dit te doen!`
+        `Je hebt geen permissie om dit te doen! (BAN_MEMBERS)`
       );
 
     if (!args[0])
