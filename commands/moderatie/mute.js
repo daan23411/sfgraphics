@@ -6,11 +6,11 @@ module.exports = {
     category: 'moderatie',
     usage: 'mute <@mention> <reason>',
     run: async (client, message, args) => {
-        if (!message.member.hasPermission("MANAGE_ROLES")) {
+        if (!message.member.permisssions.has("KICK_MEMBERS")) {
             return message.channel.send('Je hebt geen permissie om dit te doen!');
         }
 
-        if (!message.guild.me.hasPermission("MANAGE_ROLES")) {
+        if (!message.guild.me.permissions.has("KICK_MEMBERS")) {
             return message.channel.send('Ik heb geen permissie om dit te doen.');
         }
 
