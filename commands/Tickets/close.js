@@ -21,7 +21,7 @@ module.exports={
             .setTitle("Ticket " + message.channel.name)
             .setColor("RANDOM")
             .setDescription("Het ticket is gemarkeerd als **compleet**.")
-            .setFooter("© daan2341, 2020 - 2021");
+            .setFooter("© SF Graphics, 2020 - 2021");
     
         var ticketChannel = message.member.guild.channels.cache.find(channel => channel.name === "logging");
         if (!ticketChannel) return message.reply("Channel does not exist!");

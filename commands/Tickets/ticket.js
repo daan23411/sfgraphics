@@ -75,7 +75,7 @@ module.exports = {
                             .setTitle(`Hallo ${member}`)
                             .setDescription("Bedankt voor het maken van een ticket. \n Stel alvast u vraag en het support team komt u zo snel mogelijk helpen!")
                             .setColor('#417af6')
-                            .setFooter('© daan2341, 2020 - 2021')
+                            .setFooter('© SF Graphics, 2020 - 2021')
                             .setTimestamp();
 
                         settedParent.send(`<${person}, <${staffRole}>`).then(msg => msg.delete({ timeout: 10000 }));
