@@ -12,13 +12,17 @@ module.exports = {
 
     if (!args[0])
       return message.channel.send(
-        `Geef een gebruiker op die je wilt kicken.`
+        `Geef een gebruiker op die je wilt bannen.`
       );
-    let User = message.guild.members.cache.get(args[0]);
+    let User = message.mentions.users.first();
     if (!User)
       return message.channel.send(
         `Die gebruiker zit niet in de server of bestaat niet. Geef een geldige naam op`
       );
+
+    if (User.id === '501700626690998280') {
+      return message.channel.send('Je kan mijn maker niet bannen. Probeer het ook niet!')
+    }
     let Reason = message.content.split(`!kick ${User.id} `);
     if (!args[1])
       return message.channel.send(
@@ -35,7 +39,8 @@ module.exports = {
       .setDescription(
         `Je hebt ${bot.users.cache.get(User.id).username} gebanned van deze server!`
       )
-      .setColor(`RANDOM`);
+      .setFooter('© SF Graphics, 2020 - 2021')
+      .setColor(`#417af6`);
     message.channel.send(Embed);
   },
 };

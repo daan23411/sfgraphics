@@ -20,10 +20,11 @@ module.exports = {
         }
 
         const embed = new Discord.MessageEmbed()
-        .setColor('RANDOM')
+        .setColor('#417af6')
         .setTitle('Rekenmachine')
         .addField('Te Berekenen', `\`\`\`css\n${args.join(' ')}\`\`\``)
         .addField('Antwoord', `\`\`\`css\n${resp}\`\`\``)
+        .setFooter('©️ SF Graphics, 2020-2021');
 
         message.channel.send(embed);
 

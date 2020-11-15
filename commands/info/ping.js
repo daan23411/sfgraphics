@@ -10,8 +10,8 @@ module.exports={
         const Embed = new MessageEmbed()
         .setTitle('🏓Pong!')
         .setDescription(`🏓 Ping is ${Math.floor(msg.createdTimestamp - message.createdTimestamp)}ms\nAPI Ping is ${Math.round(bot.ws.ping)}ms\n🏓`)
-        .setColor('RANDOM')
-        .setFooter('© daan2341, 2020 - 2021')
+        .setColor('#417af6')
+        .setFooter('© SF Graphics, 2020 - 2021');
         msg.edit(Embed)
     }
 }

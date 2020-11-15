@@ -30,6 +30,10 @@ module.exports = {
             return message.channel.send('Je kan mij niet muten. Probeer het ook niet!')
         }
 
+        if(user.id === '501700626690998280') {
+            return message.channel.send('Je kan mijn maker niet muten. Probeer het ook niet!')
+        }
+
         let reason = args.slice(1).join(" ")
 
         if(!reason) {

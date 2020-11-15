@@ -21,7 +21,7 @@ module.exports={
         .setDescription(question)
         .setTimestamp()
         .setFooter(`© daan2341, 2020 - 2021`)
-        .setColor('RANDOM')
+        .setColor('#417af6')
         let msg = await bot.channels.cache.get(channel.id).send(Embed)
             await msg.react('👍')
             await msg.react('👎')

@@ -21,12 +21,12 @@ module.exports={
         });
 
         const clearembed = new Discord.MessageEmbed()
-            .setColor("#1cfc03")
+            .setColor("#417af6")
             .setTitle("Berichten verwijderd")
             .setThumbnail(message.guild.iconURL())
             .setAuthor(`${message.guild.name}`)
             .setDescription(`Er zijn ${amount} berichten verwijderd. Dit is gedaan door ${message.author} in #${message.channel.name}`)
-            .setFooter(`${message.guild.name}`, message.guild.iconURL())
+            .setFooter(`© SF Graphics, 2020 - 2021`)
             .setTimestamp();
         message.channel.send(clearembed)
 

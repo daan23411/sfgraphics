@@ -22,7 +22,10 @@ module.exports = {
                                 (w, i) =>
                                     `${i} - Moderator: ${message.guild.members.cache.get(w.Moderator).user.tag} Reden: ${w.Reason}`).join("\n");
                         })
-                    );
+                    )
+                    .setColor('#417af6')
+                    .setFooter('© SF Graphics, 2020 - 2021')
+                    .setTimestamp();
                 message.channel.send(Embed);
             }
         );

@@ -8,7 +8,7 @@ module.exports={
     run: async(bot,message,args)=>{
         const embed = new MessageEmbed()
         .setTitle('Serverinfo')
-        .setColor('RANDOM')
+        .setColor('#417af6')
         .setThumbnail(message.guild.iconURL())
         .setDescription(`Geeft serverinformatie over ${message.guild.name}`)
         .addFields(
@@ -17,7 +17,7 @@ module.exports={
             {name: 'Aantal leden (met bots)', value: message.guild.memberCount, inline: true}
         )
         .setTimestamp()
-        .setFooter('© daan2341, 2020 - 2021', message.guild.iconURL)
+        .setFooter('© SF Graphics, 2020 - 2021', message.guild.iconURL());
         message.channel.send(embed)
     }
 }

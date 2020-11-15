@@ -13,7 +13,7 @@ module.exports={
     const sayEmbed = new MessageEmbed()
     .setTitle('Nieuw Bericht')
     .setDescription(sayMessage)
-    .setColor('RANDOM')
+    .setColor('#417af6')
     .setFooter('©️ daan2341, 2020-2021')
     .setTimestamp()
 

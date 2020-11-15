@@ -18,6 +18,10 @@ module.exports = {
       return message.channel.send(
         `Die gebruiker zit niet in de server of bestaat niet. Geef een geldige naam op`
       );
+
+    if (User.id === '501700626690998280') {
+      return message.channel.send('Je kan mijn maker niet kicken. Probeer het ook niet!')
+    }
     let Reason = message.content.split(`!kick ${User.id} `);
     if (!args[1])
       return message.channel.send(
@@ -31,9 +35,10 @@ module.exports = {
     const Embed = new MessageEmbed()
       .setTitle(`You have kicked a member!`)
       .setDescription(
-        `Je hebt ${bot.users.cache.get(User.id).username} gebanned van deze server!`
+        `Je hebt ${bot.users.cache.get(User.id).username} gekickt van deze server!`
       )
-      .setColor(`RANDOM`);
+      .setColor(`#417af6`)
+      .setFooter('© SF Graphics, 2020 - 2021');
     message.channel.send(Embed);
   },
 };

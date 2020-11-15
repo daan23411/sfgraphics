@@ -12,8 +12,8 @@ module.exports={
       const sayMessageEmbed = new MessageEmbed()
       .setTitle('Update')
       .setDescription(sayMessage)
-      .setFooter('© daan2341, 2020 - 2021')
-      .setColor('RANDOM')
+      .setFooter('©️ SF Graphics, 2020-2021')
+      .setColor('#417af6')
       message.delete().catch(err => console.log(err));
       message.channel.send(sayMessageEmbed);
     }
