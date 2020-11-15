@@ -22,7 +22,7 @@ function getAll(client, message) {
     }
     const info = client.categories.map(cat => stripIndents`**${cat[0].toUpperCase() + cat.slice(1)}**\n${commands(cat)}`).reduce((string, category) => string + "\n" + category)
     embed.setDescription(info)
-    embed.setFooter(`© daan2341, 2020 - 2021, er zijn ${client.commands.size} commands beschikbaar!`)
+    embed.setFooter(`© SF Graphics, 2020 - 2021, er zijn ${client.commands.size} commands beschikbaar!`)
     return message.channel.send(embed)
 }
 function getCMD(client, message, input) {
