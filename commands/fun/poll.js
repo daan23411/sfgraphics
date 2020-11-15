@@ -20,7 +20,7 @@ module.exports={
         .setTitle('Nieuwe Poll!')
         .setDescription(question)
         .setTimestamp()
-        .setFooter(`© daan2341, 2020 - 2021`)
+        .setFooter(`© SF Graphics, 2020 - 2021`)
         .setColor('#417af6')
         let msg = await bot.channels.cache.get(channel.id).send(Embed)
             await msg.react('👍')

@@ -14,7 +14,7 @@ module.exports={
     .setTitle('Nieuw Bericht')
     .setDescription(sayMessage)
     .setColor('#417af6')
-    .setFooter('©️ daan2341, 2020-2021')
+    .setFooter('©️ SF Graphics, 2020-2021')
     .setTimestamp()
 
       message.delete().catch(err => console.log(err));
